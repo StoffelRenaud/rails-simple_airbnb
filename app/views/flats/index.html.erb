@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <h1>Aircbc</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <% @flats.each do |flat| %>
+      <div class="col-xs-12 col-md-4">
+        <div class="card">
+          <div class="card-content">
+            <%= link_to truncate(flat.name, :length => 25), flat_path(flat[:id]) %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+

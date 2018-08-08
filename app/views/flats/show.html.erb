@@ -1,0 +1,21 @@
+<div class="wrapper">
+  <h1><%= @flat.name %></h1>
+  <h2>
+    <%= link_to edit_flat_path(params[:id]) do %>
+      <i class="material-icons">edit</i>
+    <% end %>
+  </h2>
+  <h4>
+    <%= link_to 'Delete',
+      flat_path(params[:id]),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+  </h4>
+</div>
+
+<div class="container">
+  <p>Address : <%= @flat.address %></p>
+  <p>Description: <%= @flat.description %></p>
+  <p>Price per Night : <%= @flat.price_per_night %> € </p>
+  <p>Person allowed : <%= @flat.number_of_guests %></p>
+</div>

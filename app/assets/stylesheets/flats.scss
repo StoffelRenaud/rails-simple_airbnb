@@ -1,0 +1,25 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-content a {
+  color: #D6D1CD;
+}
+
+.card-content a:hover {
+  color: #29335C;
+  transition: 1s;
+  text-decoration: none;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.nav-wrapper {
+  padding: 0 10px;
+}
+
+.nav-wrapper a:hover {
+  text-decoration: none;
+}
